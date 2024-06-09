@@ -28,7 +28,6 @@ if ( ! function_exists( 'frost_setup' ) ) {
 
 		// Enqueue editor stylesheet.
 		add_editor_style( get_template_directory_uri() . '/style.css' );
-
 		// Remove core block patterns.
 		remove_theme_support( 'core-block-patterns' );
 
@@ -61,6 +60,7 @@ function frost_register_block_styles() {
 		),
 		'core/list' => array(
 			'no-disc' => __( 'No Disc', 'frost' ),
+			'plus' => __( 'Plus', 'frost' ),
 		),
 		'core/quote' => array(
 			'shadow-light' => __( 'Shadow', 'frost' ),
@@ -110,3 +110,8 @@ function frost_register_block_pattern_categories() {
 }
 
 add_action( 'init', 'frost_register_block_pattern_categories' );
+
+function my_theme_enqueue_styles() {
+    wp_enqueue_style('my-theme-style', get_stylesheet_uri());
+}
+add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');

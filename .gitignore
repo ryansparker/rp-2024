@@ -1,0 +1,83 @@
+# .gitignore file for theme-level source control
+
+# Ignore log files and databases.
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+*.sql
+*.sqlite
+
+# htaccess
+/.htaccess
+
+# Ignore build tools files.
+/data
+
+# Ignore Editor files.
+/*.sublime-project
+/*.sublime-workspace
+/*.komodoproject
+/.vscode
+/*.code-workspace
+
+# Other files.
+.DS_Store
+Thumbs.db
+nbproject
+db-backup
+
+# Ignore package manager stuff.
+/composer.json
+/composer.lock
+/node_modules
+/package-lock.json
+/package.json
+/vendor
+/yarn.lock
+/.yarn*
+/.pnp.*
+
+# Ignore old build tools/gulp.
+gulpfile.js
+
+
+# Ignore WordPress package manager mounts.
+/packages/auth.json
+/packages/wp-content
+
+# Ignore linting configs.
+/.stylelint*
+/stylelint.config.*js
+/.eslint*
+/eslint.config.*js
+/.editorconfig
+/.phpcs.xml
+/phpcs.xml
+/standards
+/.cursorignore
+
+# WordPress
+# Core
+/wp-admin/
+/wp-content/index.php
+/wp-content/languages
+/wp-content/plugins/index.php
+/wp-content/themes/index.php
+/wp-includes/
+/index.php
+/license.txt
+/readme.html
+/wp-*.php
+/xmlrpc.php
+
+# Configuration
+wp-config.php
+
+# Example themes
+/wp-content/themes/twenty*/
+
+# Example plugin
+/wp-content/plugins/hello.php

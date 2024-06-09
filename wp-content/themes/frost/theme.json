@@ -83,12 +83,12 @@
 					"slug": "base"
 				},
 				{
-					"color": "#000000",
+					"color": "#292929",
 					"name": "Contrast",
 					"slug": "contrast"
 				},
 				{
-					"color": "#0000ff",
+					"color": "#6F6FDB",
 					"name": "Primary",
 					"slug": "primary"
 				},
@@ -98,7 +98,7 @@
 					"slug": "secondary"
 				},
 				{
-					"color": "#eeeeee",
+					"color": "#F5F4F0",
 					"name": "Neutral",
 					"slug": "neutral"
 				}
@@ -187,17 +187,17 @@
 			"fluid": true,
 			"fontFamilies": [
 				{
-					"fontFamily": "Outfit, sans-serif",
-					"name": "Outfit",
+					"fontFamily": "Sen, sans-serif",
+					"name": "Sen",
 					"slug": "primary",
 					"fontFace": [
 						{
 							"fontDisplay": "block",
-							"fontFamily": "Outfit",
+							"fontFamily": "Sen",
 							"fontStretch": "normal",
 							"fontStyle": "normal",
 							"fontWeight": "100 900",
-							"src": [ "file:./assets/fonts/Outfit-Variable.woff2" ]
+							"src": [ "file:./assets/fonts/Sen-VariableFont_wght.ttf" ]
 						}
 					]
 				},
@@ -390,7 +390,9 @@
 				}
 			},
 			"core/list": {
-				"css": "&.is-style-no-disc {list-style-type: none; padding-left: 0;}",
+				"css": "&.is-style-no-disc {list-style-type: none; padding-left: 0;} &.is-style-plus {list-style-type: none; padding-left: 1.25em;}",
+
+
 				"spacing": {
 					"padding": {
 						"left": "var(--wp--custom--spacing--gap)"
